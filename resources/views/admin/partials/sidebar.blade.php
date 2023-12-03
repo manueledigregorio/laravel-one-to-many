@@ -11,7 +11,10 @@
                 <a href="{{route('admin.technologies.create')}}" @class(['active'=> Route::is('admin.technologies.create') ])>Crea Technologie</a>
             </li>
             <li >
-                <a href="{{route('admin.projects.index')}}" @class(['active'=> Route::is('admin.projects.index') ])>lista projects</a>
+                <a href="{{route('admin.projects.index')}}" @class(['active'=> Route::is('admin.projects.index') ])>Lista Progetti</a>
+            </li>
+            <li >
+                <a href="{{route('admin.projects.create')}}" @class(['active'=> Route::is('admin.projects.create') ])>Crea Progetti</a>
             </li>
         </ul>
     </nav>
