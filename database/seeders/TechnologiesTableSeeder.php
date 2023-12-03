@@ -2,6 +2,7 @@
 
 namespace Database\Seeders;
 
+use App\Functions\Helper;
 use App\Models\Project;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
@@ -20,7 +21,7 @@ class TechnologiesTableSeeder extends Seeder
             $technology->name = $faker->name();
             $technology->description = $faker->word();
             $technology->version = $faker->word();
-            $technology->slug = Tecnology::generateSlug($technology->title);
+            $technology->slug = Helper::generateSlug($technology->name, Tecnology::class);
 
             $technology->save();
 
